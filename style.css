@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-size: 100%;
+  --color-dark-blue: #04294d;
+  --color-light-blue: #255674;
+  --color-white: #f7f3f3;
+  --color-black-text: #202020;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  font-family: "Baloo Tamma 2";
+  font-size: 1.25rem;
+}
+
+section {
+  padding: 0.5rem 1.5rem 2rem;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 2.25rem;
+}
+
+h2 {
+  padding-top: 4rem;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.line {
+  margin: 0 auto 2.5rem;
+  width: 70px;
+  height: 2px;
+  border: none;
+  background-color: var(--color-black-text);
+}
+
+/* || UTILITIES */
+
+.align{
+  text-align: center;
+}
+
+.beige-bg {
+  background-color: #f5f5e9;
+}
+
+.blue-bg {
+  background-color: var(--color-light-blue);
+}
+
+/* || NAVIGTION */
+
+.nav-line {
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 3rem;
+  display: flex;
+  background-color: var(--color-light-blue);
+  -webkit-box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0.54);
+  box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0.54);
+  z-index: 100;
+}
+
+#ham {
+  margin: 0.25rem;
+  padding: 0.25rem;
+  background-color: var(--color-light-blue);
+  font-size: 1.5rem;
+  color: var(--color-black);
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.nav {
+  top: 3rem;
+  width: 100vw;
+  height: fit-content;
+  color: var(--color-dark-blue);
+  background: var(--color-dark-blue);
+  opacity: 0.9;
+  transform: translateY(-130%);
+  transition: transform 0.2s ease;
+  z-index: 99;
+}
+
+.showNav {
+  transform: translateY(0);
+}
+
+.nav-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 2rem 0;
+  list-style: none;
+}
+
+  .know-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 0.75rem 0;
+  list-style: none;
+}
+
+.img-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 0.75rem 0;
+  list-style: none;
+}
+
+.nav-link a {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  color: var(--color-dark-blue);
+  text-decoration: none;
+}
+
+.nav-link a:hover {
+  color: #90becc;
+}
+
+.nav-link a:focus {
+  outline: 2px solid var(--color-dark-blue);
+  color: #90becc;
+}
+
+.nav-link a:active {
+  outline: none;
+}
+
+/* || WELCOME SECTION */
+
+#welcome-section {
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.welcome-text {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  padding: 1rem 0;
+  width: 100%;
+  text-align: center;
+  color: var(--color-white);
+  background-color: var(--color-light-blue);
+  transform: translate(-50%, -50%);
+}
+
+#welcome-section p {
+  font-size: 1.5rem;
+}
+
+/* || ABOUT SECTION */
+
+#home {
+  text-align: justify;
+}
+
+#home p:first-of-type {
+  padding-bottom: 1rem;
+}
+
+
+
+/* || PROJECTS SECTION */
+
+#fashion h2 {
+  color: var(--color-white);
+}
+
+#electronics h2 {
+  color: var(--color-white);
+}
+
+#fashion .line {
+  background-color: var(--color-white);
+}
+
+.img-container {
+  display: flex;
+  padding: 0.5rem 0;
+  flex-direction: column;
+}
+
+#fashion p {
+  padding: 0.5rem;
+  color: var(--color-white);
+  text-align: center;
+  line-height: 1;
+}
+
+#electronics p {
+  padding: 0.5rem;
+  color: var(--color-white);
+  text-align: center;
+  line-height: 1;
+}
+
+#mobiles p {
+  padding: 0.5rem;
+  color: var(--color-black);
+  text-align: center;
+  line-height: 1;
+}
+.img-tile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 0.25rem 1rem;
+  overflow: hidden;
+}
+
+.imges {
+  width: 100%;
+  height: 500px;
+  border-radius: 2px;
+  text-align: justify;
+}
+
+
+
+/* || CONTACT SECTION */
+
+#contact p {
+  text-align: left;
+}
+
+#know-us p {
+  text-align: center;
+}
+
+.contact-container {
+  display: flex;
+  align-items: left;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.know-Us {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.contact-links i {
+  margin: 0.25rem 1rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--color-white);
+  border-radius: 3px;
+  border: 2px solid var(--color-white);
+  background-color: var(--color-black-text);
+}
+
+
+.contact-links i:hover {
+  border: 2px solid var(--color-black-text);
+  color: var(--color-black-text);
+  background-color: var(--color-white);
+}
+
+.link:focus-visible {
+  outline: 3px solid rgb(197, 124, 247);
+}
+
+/* || MEDIA */
+
+@media (min-width: 30em) {
+  /* || GENERAL STYLES */
+
+  section {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+  }
+
+  /* || PROJECTS SECTION */
+
+  .imges-tile {
+    margin: 0 2rem 2rem;
+  }
+}
+
+@media (min-width: 43.75em) {
+  /* || UTILITIES */
+
+  .margin {
+    margin-right: 4rem;
+  }
+
+  /* || NAVIAGTION */
+
+  .nav-line {
+    display: none;
+  }
+
+  .nav {
+    transform: translateY(0%);
+    top: 0rem;
+    left: 0rem;
+    width: 100%;
+    background-color: var(--color-light-red);
+    opacity: 1;
+    -webkit-box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0.54);
+    box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0.54);
+    z-index: 101;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0.5rem;
+  }
+
+  
+  .nav-link a {
+    margin: 0 1rem;
+  }
+
+  /* || ABOUT SECTION */
+
+  #about {
+    padding: 0.5rem 5rem 2rem;
+  }
+
+  
+
+  /* || PROJECTS SECTION */
+
+  .img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0.5rem 1rem;
+  }
+
+  /* || CONTACT SECTION */
+
+@media (min-width: 48em) {
+  /* || PROJECTS SECTION */
+
+  .project-tile {
+    max-width: 22rem;
+    margin: 0 1rem 2rem;
+  }
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
